@@ -1,0 +1,6 @@
+def pick_engineer()
+	name_list =Array.new()
+	File.open("engineers.txt").each{|name|name_list.push(name)}
+	puts name_list[rand(name_list.size)] #random name from list and return
+end
+pick_engineer() #print random name
